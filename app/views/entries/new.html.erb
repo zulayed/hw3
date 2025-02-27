@@ -10,9 +10,16 @@
     <input type="text" id="description" name="description">
   </p>
   <p>
+  <!--  
+    <label for="place_id">Place_id:</label> -->
+    <input type="hidden" id="place_id" name="place_id" value ="<%=@place.id%>">
+  </p>
+  
+  <p>
     <label for="occurred_on">Date:</label>
     <input type="date" id="occurred_on" name="occurred_on">
   </p>
+  
   <button>Submit</button>
 </form>
 
