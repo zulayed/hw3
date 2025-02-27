@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get("/", { :controller => "places", :action => "index" })
   
   get "/places/:id/entries/new", :controller => "entries", :action => "new"
+  post "/places/:id/entries", :controller => "entries", :action => "create"
+
 
 
 end
